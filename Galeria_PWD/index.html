@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería Responsive</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+  <header>
+    <button id="modoOscuro" title="Alternar Modo Oscuro">🌙 Modo Oscuro</button>
+    <button id="toggleMusica" title="Reproducir/Pausar Música">▶</button>
+  </header>
+
+  <div class="bienvenida">
+    <h1>Bienvenido a mi galería</h1>
+  </div>
+
+  <main>
+    <section class="carrusel">
+      <div class="contenedor-imagenes">
+        <img src="assets/images/img1.png" alt="Imagen 1">
+        <img src="assets/images/img2.png" alt="Imagen 2">
+        <img src="assets/images/img3.png" alt="Imagen 3">
+        <img src="assets/images/img4.png" alt="Imagen 4">
+        <img src="assets/images/img5.png" alt="Imagen 5">
+      </div>
+      <button class="flecha flecha-izquierda" id="anterior" title="Imagen Anterior">&#10094;</button>
+      <button class="flecha flecha-derecha" id="siguiente" title="Imagen Siguiente">&#10095;</button>
+    </section>
+  </main>
+
+  <div id="modal" class="modal">
+    <span id="cerrarModal" title="Cerrar Modal">&times;</span>
+    <img class="modal-contenido" id="imagenModal" alt="Imagen Ampliada">
+  </div>
+
+  <audio id="musica" loop>
+    <source src="assets/audio/The Wonder of You.mp3" type="audio/mpeg">
+  </audio>
+  <script src="js/script.js"></script>
+</body>
+</html>
